@@ -1,0 +1,7 @@
+/* Babel presets tell babel how to transform certain syntax into es5 JavaScript.
+   @babel/preset-env, for example, can transform all es-next syntax. See available
+   babel presets here https://babeljs.io/docs/en/babel-preset-env
+*/
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
