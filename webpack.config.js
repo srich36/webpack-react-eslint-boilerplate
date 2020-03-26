@@ -8,8 +8,9 @@ module.exports = {
   entry: "./src/App.js",
   output: {
     path: path.join(__dirname, "src", "js"),
-    filename: "bundle.js",
     /* The base path which will be routed to index.html */
+    filename: "[name].[contenthash].js",
+
     publicPath: "/"
   },
   module: {
