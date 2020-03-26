@@ -7,7 +7,7 @@ This repository serves as a template for starting React apps. Within it is suppo
 ## Key Concepts
 
 - Webpack Loaders
-  - Webpack loaders take files and process them into different file outputs. They can allow you to transform syntax, import things like css into your html, etc.
+  - Webpack loaders take files and process them into different file outputs. They can allow you to transform syntax, import things like css into your html, etc. Loaders take an input and produces an output bundle
 - Babel Presets
   - Babel presets provide a set of rules that babel uses to transform syntax. For example, a babel preset can be used to transform esNext syntax into es5.
 
@@ -34,6 +34,23 @@ This repository serves as a template for starting React apps. Within it is suppo
   - This babel preset is used to transform esNext syntax into es5 JavaScript
 - babel-loader
   - Webpack needs loaders that tell it how to process files and turn them into a bundle. The babel-loader tells webpack how to work with babel
+- webpack
+  - The core webpack bundling engine
+- webpack-cli
+  - A command line interface for interfacing with `webpack`. You can pass webpack specific config files through `webpack-cli`
+
+##### Eslint Dependencies
+
+- eslint
+  - The core `eslint` engine: a JavaScript linter to find and fix problems
+- eslint-config-airbnb
+  - This dependency installs the airbnb eslint config that is extended within the `.eslintrc.json` file
+- eslint-plugin-import, eslint-plugin-jsx-ally, eslint-plugin-react, eslint-plugin-react-hooks
+  - Peer dependencies required by the eslint-config-airbnb dependency.
+- eslint-config-prettier
+  - A prettier config file that is extended both to disable all eslint settings that conflict with prettier and create custom prettier rules
+- eslint-plugin-prettier
+  - A plugin thats used to allow eslint to format files with prettier
 
 ## Webpack Configuration
 
