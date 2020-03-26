@@ -1,10 +1,12 @@
-import React, {Component} from 'react'
-import AppWrapper from 'components/AppWrapper'
+import React from "react";
+import ReactDOM from "react-dom";
+import AppWrapper from "./components/AppWrapper";
 
-const App = (props) =>{
-    return (
-        <AppWrapper/>
-    )
-}
+const App = (props) => {
+  return <AppWrapper />;
+};
 
-export default App; 
+// eslint-disable-next-line no-undef
+ReactDOM.render(<App />, document.getElementById("root"));
+
+export default App;
