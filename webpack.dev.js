@@ -6,7 +6,8 @@ module.exports = merge(common, {
   mode: "development",
   devtool: "source-map",
   devServer: {
-    hot: true
+    hot: true,
+    host: "0.0.0.0"
   },
   output: {
     filename: "[name].[hash].js"

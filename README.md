@@ -38,6 +38,8 @@ This repository serves as a template for starting React apps. Within it is suppo
   - The core webpack bundling engine
 - webpack-cli
   - A command line interface for interfacing with `webpack`. You can pass webpack specific config files through `webpack-cli`
+- `webpack-merge`
+  - Used to merge two different webpack configuration files together. Useful when you have a development configuration, production configuration, and configuration shared between the two. That is what it is used for within this template.
 
 ##### Eslint Dependencies
 

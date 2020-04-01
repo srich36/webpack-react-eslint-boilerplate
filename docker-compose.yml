@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: .
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app:rw
+      - /app/node_modules
+    command: yarn serve
+    environment:
+      - NODE_ENV=development
