@@ -23,9 +23,3 @@ jobs:
     steps:
       - name: Deploy dockerfile to production
         run: echo "Hello world"
-  
-  print:
-    runs-on: [ubuntu-latest]
-    steps:
-      - name: Test Print
-        run: echo "Test print"
