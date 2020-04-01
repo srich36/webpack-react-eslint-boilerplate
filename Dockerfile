@@ -11,5 +11,5 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY . /app
 RUN yarn
 
-# start app
-CMD ["yarn", "serve"]
+# Run Tests unless command overloaded from `docker-compose`
+CMD ["yarn", "test"]

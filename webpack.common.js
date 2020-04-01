@@ -7,12 +7,18 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const isDevelopment = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  entry: "./src/App.js",
+  entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "build"),
     /* Hash the filename every build for cache busting */
     /* The base path which will be routed to index.html */
     publicPath: "/"
+  },
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, "src/"),
+      components: path.resolve(__dirname, "src/components")
+    }
   },
   module: {
     rules: [
