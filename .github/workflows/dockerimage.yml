@@ -18,6 +18,7 @@ jobs:
 
   test:
     needs: build
+    runs-on: [ubuntu-latest]
     steps:
       - name: Run Docker image to run tests
-      - run: docker run test-image
+        run: docker run test-image
