@@ -75,3 +75,7 @@ This repository serves as a template for starting React apps. Within it is suppo
 - `webpack-dev-server` does not write the bundle to disk by default. Instead it just serves it from memory
 - `clean-webpack-plugin`
   - All files within the output path of the webpack configuration will be deleted upon a webpack running. Note that the folders themselves won't be deleted.
+
+### Github Actions
+
+Github actions define workflows that have a list of jobs that can be ran concurrently. Only if you specify the `needs` keyword will one job require the first job to finish successfully before executing. This is useful for building and testing followed by a job that needs successful tests for deployment.
