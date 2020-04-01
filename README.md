@@ -65,3 +65,5 @@ This repository serves as a template for starting React apps. Within it is suppo
 - HTML Webpack plugin
   - This plugin is used to inject the outputted webpack bundle into the template html file. This allows the build process to dynamically include the built script bundles in the html file with a different file-hash every time for cache busting
 - `webpack-dev-server` does not write the bundle to disk by default. Instead it just serves it from memory
+- `clean-webpack-plugin`
+  - All files within the output path of the webpack configuration will be deleted upon a webpack running. Note that the folders themselves won't be deleted.
