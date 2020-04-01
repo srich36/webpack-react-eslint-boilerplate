@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,10 +15,4 @@ jobs:
       - name: Build the Docker image
         run: |
           docker build . --file Dockerfile --tag test-image
-
-  test:
-    needs: build
-    runs-on: [ubuntu-latest]
-    steps:
-      - name: Run Docker image to run tests
-        run: docker run test-image
+          docker run test-image
