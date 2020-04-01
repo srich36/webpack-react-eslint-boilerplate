@@ -62,3 +62,6 @@ This repository serves as a template for starting React apps. Within it is suppo
   - A list of loaders that webpack will use when processing files of the type matching the section's test regex
 - rule.exclude
   - Exclude files of any type with file paths that start with the provided string or match the provided regex
+- HTML Webpack plugin
+  - This plugin is used to inject the outputted webpack bundle into the template html file. This allows the build process to dynamically include the built script bundles in the html file with a different file-hash every time for cache busting
+- `webpack-dev-server` does not write the bundle to disk by default. Instead it just serves it from memory

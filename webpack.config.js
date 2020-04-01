@@ -7,10 +7,10 @@ const isDevelopment = process.env.NODE_ENV !== "production";
 module.exports = {
   entry: "./src/App.js",
   output: {
-    path: path.join(__dirname, "src", "js"),
-    /* The base path which will be routed to index.html */
+    path: path.join(__dirname, "build", "js"),
+    /* Hash the filename every build for cache busting */
     filename: "[name].[contenthash].js",
-
+    /* The base path which will be routed to index.html */
     publicPath: "/"
   },
   module: {
@@ -37,6 +37,10 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    hot: true
+  },
+  devtool: "source-map",
   plugins: [
     new HtmlWebPackPlugin({
       /* This injects the bundle into the src/index.html template */
