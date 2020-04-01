@@ -47,14 +47,18 @@ This repository serves as a template for starting React apps. Within it is suppo
 
 - eslint
   - The core `eslint` engine: a JavaScript linter to find and fix problems
-- eslint-config-airbnb
+- `eslint-config-airbnb`
   - This dependency installs the airbnb eslint config that is extended within the `.eslintrc.json` file
-- eslint-plugin-import, eslint-plugin-jsx-ally, eslint-plugin-react, eslint-plugin-react-hooks
+- `eslint-plugin-import`, `eslint-plugin-jsx-ally`, `eslint-plugin-react`, `eslint-plugin-react-hooks`
   - Peer dependencies required by the eslint-config-airbnb dependency.
-- eslint-config-prettier
+- `eslint-config-prettier`
   - A prettier config file that is extended both to disable all eslint settings that conflict with prettier and create custom prettier rules
-- eslint-plugin-prettier
+- `eslint-plugin-prettier`
   - A plugin thats used to allow eslint to format files with prettier
+- `eslint-plugin-jest`
+  - Allows eslint to work with jest test files and exposes recommended configurations
+- `eslint-import-resolver-webpack`
+  - This tells `eslint` to use webpack to resolve imports within the files when checking for module paths. This plugin allows `eslint` to then recognize the results of `webpack` resolved aliases. To utilize, you can tell it what config to use in `eslintrc.json`
 
 ## Webpack Configuration
 
