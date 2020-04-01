@@ -1,3 +1,5 @@
+![Docker Image CI](https://github.com/srich36/webpack-react-eslint-boilerplate/workflows/Docker%20Image%20CI/badge.svg?branch=master)
+
 # Webpack Boilerplate
 
 This repository serves as a template for starting React apps. Within it is support for `webpack dev server` hot reloading, css `imports` and loading, `eslint` with `airbnb` and `prettier` config rules and formatting. Additionally, it contains a template directory structure and starting file for React projects.
