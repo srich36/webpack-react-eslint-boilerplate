@@ -16,3 +16,16 @@ jobs:
         run: |
           docker build . --file Dockerfile --tag test-image
           docker run test-image
+  
+  deploy:
+    runs-on: [ubuntu-latest]
+    needs: test
+    steps:
+      - name: Deploy dockerfile to production
+        run: echo "Hello world"
+  
+  print:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Test Print
+        run: echo "Test print"
