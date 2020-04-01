@@ -1,4 +1,4 @@
-![Docker Image CI](https://github.com/srich36/webpack-react-eslint-boilerplate/workflows/Docker%20Image%20CI/badge.svg?branch=master)
+![Docker Image Building](https://github.com/srich36/webpack-react-eslint-boilerplate/workflows/Docker%20Image%20CI/badge.svg?branch=master)
 
 # Webpack Boilerplate
 
